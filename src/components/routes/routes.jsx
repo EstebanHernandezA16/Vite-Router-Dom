@@ -14,10 +14,11 @@ const {themeColors, nightMode} = useTheme();
     // ${nightMode? themeColors.dark.colors.bgPrimary : themeColors.light.colors.bgPrimary }
     // ${nightMode? themeColors.light.colors.bgPrimary : themeColors.dark.colors.bgPrimary}
     // {`h-11 ${nightMode? themeColors.dark.colors.bgPrimary : themeColors.light.colors.bgPrimary} top-0`}
+    
     return(
     <div className="font-mono flex flex-col text-center">
         <div className={`h-11 ${nightMode? themeColors.dark.colors.bgPrimary : themeColors.light.colors.bgPrimary} top-0`}><Navbar/></div>
-        <div className={`h-96 ${nightMode? themeColors.dark.colors.bgPrimary : themeColors.light.colors.bgPrimary}`} ><Outlet/></div>
+        <div className={`h-screen ${nightMode? themeColors.dark.colors.bgPrimary : themeColors.light.colors.bgPrimary}`} ><Outlet/></div>
         <div className={`h-24 ${nightMode? themeColors.dark.colors.bgPrimary : themeColors.light.colors.bgPrimary} bottom-0`} ><Footer/></div>
     </div>
     );

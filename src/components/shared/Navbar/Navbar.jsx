@@ -24,9 +24,9 @@ export const Navbar = () => {
         <li>
           <NavLink to="/charts" className={({isActive}) => isActive ? selected: undefined}>Charts</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/Excel" className={({isActive}) => isActive ? selected: undefined}>Upload Excel</NavLink>
-        </li>
+        </li> */}
         <li>
           {/* <text>Night Mode</text> */}
           {/* <input 
