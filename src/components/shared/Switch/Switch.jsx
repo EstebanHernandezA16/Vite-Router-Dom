@@ -30,7 +30,7 @@ export const Switch = () =>{
         } bg-white dark:bg-gray-900`}
       >
         {nightMode ? (<> 
-          <FontAwesomeIcon icon={faMoon} />
+          <FontAwesomeIcon icon={faMoon} color="azure"/>
         </>):(<>
        {/* sun */}
        <FontAwesomeIcon icon={faSun} color="yellow"/>
